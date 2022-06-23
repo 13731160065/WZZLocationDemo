@@ -28,9 +28,9 @@
 
 - (void)testExample {
     //http://lbs.amap.com/console/show/picker
-    
-    CLLocationDegrees lat = 39.913822;
-    CLLocationDegrees lon = 116.385386;
+//    116.185668,39.904346
+    CLLocationDegrees lat = 39.904346;
+    CLLocationDegrees lon = 116.185668;
     CLLocationCoordinate2D location2D = CLLocationCoordinate2DMake(lat, lon);
     CLLocationCoordinate2D WGSlocation2D = [ChangeLoction gcj02ToWgs84:location2D];
     NSLog(@"lat：%f,lon：%f",WGSlocation2D.latitude , WGSlocation2D.longitude);
